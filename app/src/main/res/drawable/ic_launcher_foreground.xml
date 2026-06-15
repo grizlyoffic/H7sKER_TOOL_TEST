@@ -10,7 +10,7 @@
         android:pathData="M54,12 A42,42 0 1,0 54,96 A42,42 0 1,0 54,12 Z" />
     <!-- Inner ring -->
     <path
-        android:fillColor="none"
+        android:fillColor="#00000000"
         android:strokeColor="#00FF9D"
         android:strokeWidth="2"
         android:pathData="M54,18 A36,36 0 1,0 54,90 A36,36 0 1,0 54,18 Z" />
