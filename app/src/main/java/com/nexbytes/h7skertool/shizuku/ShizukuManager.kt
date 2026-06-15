@@ -86,7 +86,11 @@ object ShizukuManager {
     fun isServiceConnected(): Boolean = serviceConnected
 
     private fun ensureService(): IRemoteService? {
-        if (remoteService == null && hasPermission()) bindService()
-        return remoteService
+    // Expression body ki jagah block body {} ka use karein
+    if (remoteService == null && hasPermission()) {
+        bindService()
     }
+    return remoteService // Yahan 'return' allowed hai kyunki ab block body hai
+}
+
 }
